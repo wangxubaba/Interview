@@ -13,6 +13,7 @@
   <tr><th>序号</th><th>图表</th><th>Vue页面</th><th>访问地址</th></tr>
   <tr><td>1</td><td>候选人面试进度</td><td>CandidateInterviewerPage</td><td>http://localhost:8080/#/candidate</td></tr>
   <tr><td>2</td><td>面试官评审进度</td><td>InterviewerEvaluationPage</td><td>http://localhost:8080/#/interviewer</td></tr>
+  <tr><td>2</td><td>待面试进度</td><td>ICandidateAndInterviewernPage</td><td>http://localhost:8080/#/?</td></tr>
   <tr><td>3</td><td>招聘分布</td><td>RecruitmentDistributionPage</td><td>http://localhost:8080/#/recruitment</td></tr>
   <tr><td>4</td><td>关键词</td><td>KeyWordsPage</td><td>http://localhost:8080/#/key</td></tr>
   <tr><td>5</td><td>雷达图1</td><td>Radar_1Page</td><td>http://localhost:8080/#/radar/1</td></tr>
