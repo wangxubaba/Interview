@@ -1,4 +1,4 @@
-<template>
+<template id="content">
   <div id="app">
     <router-view/>
   </div>
@@ -19,5 +19,13 @@ export default {
   text-align: center;
   color: #2c3e50;
   text-align: center;
+  margin:0 ;
+  padding: 0;
+  overflow-x:hidden;
+  overflow-y: hidden;
 }
+  #content{
+    margin: 0;
+    padding: 0;
+  }
 </style>

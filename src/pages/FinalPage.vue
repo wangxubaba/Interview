@@ -1,20 +1,23 @@
 <template>
-    <div>
+    <div id="content" v-bind:style="{width:window_width+'px',height:window_height+'px'}">
         <table>
+            <tr>
+                <th colspan="6" style="font-size: 30px">title</th>
+            </tr>
             <tr>
                 <td><Province></Province></td>
                 <td><Promotion></Promotion></td>
                 <td colspan="2" rowspan="2"><Recruitment></Recruitment></td>
-                <td colspan="2"></td>
+                <td colspan="2"><Interviewer></Interviewer></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td colspan="2"></td>
+                <td><Radar_1></Radar_1></td>
+                <td><Radar_2></Radar_2></td>
+                <td colspan="2"><Candidate></Candidate></td>
             </tr>
             <tr>
-                <td colspan="3"></td>
-                <td colspan="3"></td>
+                <td colspan="3"><Key></Key></td>
+                <td colspan="3"><Candiviewer></Candiviewer></td>
             </tr>
         </table>
     </div>
@@ -47,7 +50,13 @@
 </script>
 
 <style scoped>
-.insert{
-    margin-left: 30%;
+td{
+    padding: 0px;
+    margin: 0;
 }
+    #content{
+        background-color: black;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
 </style>

@@ -11,7 +11,7 @@
         },
         data(){
             return{
-                window_width:window.innerWidth-20,
+                window_width:window.innerWidth-40,
                 window_height:window.innerHeight-20
             }
         },

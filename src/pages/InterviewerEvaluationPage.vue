@@ -1,6 +1,6 @@
 <template>
     <div>
-      <div id="my_chart" style="width: 60%;height:500px;margin-left: 20%">
+      <div id="my_chart6" v-bind:style="{width:window_width/3+'px',height:window_height/4+'px'}">
       </div>
     </div>
 </template>
@@ -11,9 +11,15 @@
       mounted() {
         this.draw()
       },
+        data(){
+            return{
+                window_width:window.innerWidth-40,
+                window_height:window.innerHeight-20
+            }
+        },
       methods:{
         draw(){
-          let myChart = this.$echarts.init(document.getElementById('my_chart'))
+          let myChart = this.$echarts.init(document.getElementById('my_chart6'),"dark")
           myChart.setOption({
             tooltip: {
               trigger: 'axis',

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div id="my_chart2" v-bind:style="{width:window_width/3+'px',height:window_height/3+100+'px'}">
+        <div id="my_chart2" v-bind:style="{width:window_width/3+'px',height:window_height/2+'px'}">
         </div>
     </div>
 </template>
@@ -17,7 +17,7 @@
         },
         data(){
             return{
-                window_width:window.innerWidth-20,
+                window_width:window.innerWidth-40,
                 window_height:window.innerHeight-20
             }
         },
