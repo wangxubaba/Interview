@@ -2,7 +2,13 @@
     <div id="content" v-bind:style="{width:window_width+'px',height:window_height+'px'}">
         <table>
             <tr>
-                <th colspan="6" style="font-size: 30px">title</th>
+                <td colspan="2">
+                    <div v-bind:style="{width:window_width/3-20+'px',height: '1px',backgroundColor:'white'}"></div>
+                </td>
+                <th colspan="2" style="font-size: 28px;-webkit-text-fill-color: white;padding: 2px">招商银行候选人/面试官状态时时监控图</th>
+                <td colspan="2">
+                    <div v-bind:style="{width:window_width/3-20+'px',height: '1px',backgroundColor:'white'}"></div>
+                </td>
             </tr>
             <tr>
                 <td><Province></Province></td>

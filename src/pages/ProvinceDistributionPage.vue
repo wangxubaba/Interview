@@ -22,9 +22,9 @@
                 // 绘制图表
                 myChart.setOption({
                     title: {
-                        text: '同名数量统计',
-                        subtext: '纯属虚构',
-                        left: 'left'
+                        text: '候选分布',
+                        left: 'left',
+                        top:10
                     },
                     tooltip: {
                         trigger: 'item',
@@ -34,7 +34,7 @@
                         {
                             name: '姓名',
                             type: 'pie',
-                            radius: '90%',
+                            radius: '80%',
                             center: ['50%', '50%'],
                             data: province,
                             label: {
