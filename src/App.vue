@@ -1,4 +1,4 @@
-<template>
+<template id="content">
   <div id="app">
     <router-view/>
   </div>
@@ -18,9 +18,14 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
   text-align: center;
-  margin-left: 12%;
-  margin-right: 12%;
+  margin:0 ;
+  padding: 0;
+  overflow-x:hidden;
+  overflow-y: hidden;
 }
+  #content{
+    margin: 0;
+    padding: 0;
+  }
 </style>

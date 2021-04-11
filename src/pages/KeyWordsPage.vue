@@ -1,6 +1,6 @@
 
 <template>
-  <div class="hello">
+  <div class="hello" v-bind:style="{width:window_width/2+'px',height:window_height/2-40+'px'}">
     <div id="app">
       <wordcloud
           :data="defaultWords"
@@ -27,6 +27,8 @@
         },
       data() {
         return {
+          window_width:window.innerWidth-40,
+          window_height:window.innerHeight-20,
           myColors: ['#1f77b4', '#629fc9', '#94bedb', '#c9e0ef'],
           defaultWords: [{
             "name": "Cat",
@@ -60,5 +62,7 @@
 </script>
 
 <style scoped>
-
+.hello{
+  background-color: rgb(51,51,51);
+}
 </style>

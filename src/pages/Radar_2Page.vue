@@ -1,6 +1,6 @@
 <template>
     <div>
-      <div id="my_chart" style="width: 60%;height:500px;margin-left: 20%">
+      <div id="my_chart5" v-bind:style="{width:window_width/6+'px',height:window_height/4+'px'}">
       </div>
     </div>
 </template>
@@ -11,10 +11,16 @@
         mounted() {
           this.drawLine();
         },
+        data(){
+            return{
+                window_width:window.innerWidth-40,
+                window_height:window.innerHeight-20
+            }
+        },
       methods: {
         drawLine(){
           // 基于准备好的dom，初始化echarts实例
-          let myChart = this.$echarts.init(document.getElementById('my_chart'));
+          let myChart = this.$echarts.init(document.getElementById('my_chart5'),"dark");
           var dataBJ = [
             [55,9,56,0.46,18,6,1],
             [25,11,21,0.65,34,9,2],
