@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div id="my_chart" style="width: 60%;height:500px;margin-left: 20%">
+        <div id="my_chart2" v-bind:style="{width:window_width/3+'px',height:window_height/3+100+'px'}">
         </div>
     </div>
 </template>
@@ -9,15 +9,21 @@
     // eslint-disable-next-line no-unused-vars
     import China from '../assets/china'
     // eslint-disable-next-line no-unused-vars
-    import overall from '../assets/recruitment/17、招商银行天津分行2021.json'
+    import overall from '../assets/recruitment/1、招商银行宁波分行.json'
     export default {
         name: "RecruitmentDistributionPage",
         mounted(){
           this.draw()
         },
+        data(){
+            return{
+                window_width:window.innerWidth-20,
+                window_height:window.innerHeight-20
+            }
+        },
         methods:{
             draw(){
-                let myChart = this.$echarts.init(document.getElementById('my_chart'))
+                let myChart = this.$echarts.init(document.getElementById('my_chart2'),"dark")
                 // 绘制图表
                 myChart.setOption({
                     // title: {
