@@ -28,12 +28,12 @@
               }
             },
             legend: {
-              data: ['评审人数']
+              data: ['评审人数','待评审人数']
             },
             grid: {
-              left: '3%',
-              right: '4%',
-              bottom: '3%',
+              left: '8%',
+              right: '8%',
+              bottom: '7%',
               containLabel: true
             },
             xAxis: {
@@ -53,7 +53,7 @@
             yAxis: {
               type: 'value',
               scale : true,
-              max : 600,
+              max : 1700,
               min : 0,
               splitNumber : 5
             },
@@ -63,11 +63,19 @@
                 type: 'bar',
                 barWidth: '60%',
                 label: {
-                  show: true,
+                  show: false,
                   position: ''
                 },
-                color:'#d48265',
                 data: ['-', '-', 44, '-', 2, 176, 79, 388, 578, 166, '-', '-', 92, 42, '-']
+              },
+              {
+                name: '待评审人数',
+                type: 'line',
+                label: {
+                  show: false,
+                  position: ''
+                },
+                data: [0, 149, 212, 420, 665, 1355, 1604, 1599, 1369, 834, 692, 1295, 1373, 1435, 1444]
               }
             ]
 
