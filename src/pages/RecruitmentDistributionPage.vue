@@ -37,6 +37,11 @@
                     //     },
                     // },
                     // 提示框组件
+                    title: {
+                        text: '面试人员地理分布',
+                        left: 'center',
+                        top:10
+                    },
                     tooltip: {
                         trigger: 'item', // 触发类型, 数据项图形触发，主要在散点图，饼图等无类目轴的图表中使用
                         // 提示框浮层内容格式器，支持字符串模板和回调函数两种形式
@@ -64,7 +69,7 @@
                         },
                         // 地图区域的多边形 图形样式
                         itemStyle: {
-                            areaColor: '#333333', // 地图区域的颜色
+                            areaColor: 'rgb(221,107,102)', // 地图区域的颜色
                             borderColor: 'gray', // 图形的描边颜色 支持的颜色格式同 color，不支持回调函数
                             borderType: 'dotted', // 描边类型，默认为实线，支持 'solid', 'dashed', 'dotted'
                         },
@@ -72,7 +77,7 @@
                         emphasis: {
                             label: {
                                 show: true, // 是否显示标签
-                                color: '#17233d', // 文字的颜色 如果设置为 'auto'，则为视觉映射得到的颜色，如系列色
+                                color: '#FFFFFF', // 文字的颜色 如果设置为 'auto'，则为视觉映射得到的颜色，如系列色
                             },
                             itemStyle: {
                                 areaColor: '#ed4014', // 地图区域的颜色
